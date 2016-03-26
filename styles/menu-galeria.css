@@ -1,0 +1,53 @@
+
+
+#menu-galeria-fotos {
+	margin-top:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+	height: auto;
+	width: 220px;
+	background-color: #eee;
+	background-position: left top;
+	border-radius: 0px 0px 20px 20px;
+	font-size:12px;
+	float:left;
+	
+}
+
+#accordion-galeria h3{
+	width:180px;
+	font-size:12px;
+}
+
+#item {
+        border: 1px solid #ACCFE8;
+        border-width: 1px 1px 0 1px;
+        width: 166px;
+		font: 80% "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#item ul, li {
+        list-style-type: none;
+		font-size:12px;
+}
+
+#item ul {
+        margin: 0;
+        padding: 0;
+}
+
+#item li {
+        border-bottom: 1px solid #ACCFE8;
+}
+
+#item a {
+        text-decoration: none;
+        color: #3366CC;
+        background: #FFFFFF;
+        display: block;
+        padding: 3px 6px;
+        width: 148px;
+}
+
+#item a:hover {
+        background: #D3D3D3;
+}

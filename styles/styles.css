@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #656565;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: #373937;
+    /*background-image: url(fondos/foto_laterar_izq2.jpg);*/
+    /*#04B45F;
+    /*#99CC33;
+    /*#373937;*/
+
+}
+
+.contenido {
+    height: auto;
+    width: 960px;	
+    position:relative;
+    margin:0 auto;
+    text-align:left;
+    padding-top: 26px;
+    padding-bottom:30px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: #ffffff;
+
+}
+
+
+#header {	
+    width: auto;
+    height: 170px;
+    margin: 0 auto;    
+}
+
+#logo {
+    float:left;	
+    width: 256px;
+    height: 128px;
+    background-image:url(../banners/colectivo1.jpg);
+    background-repeat: no-repeat;
+    /*float:left;*/
+}
+
+#flash {	
+    width: 468px;
+    height: 111px;
+    background-color:#000000;
+    float:right;    
+    /*float:left;*/
+}
+
+#menu2 {	
+    width: 900px;
+    height: 45px;	
+    float:right;
+    /*background-color: whitesmoke;*/
+    background-color:#0066cc;
+    /*0B6121 Verde antiguo*/
+    /*#04B4AE;*/
+    /*#04B4AE;*/
+    /*#1682ba;*/
+    border-radius: 5px 5px 5px 5px;	
+}
+
+#cuerpo {
+    background-color: #FFFFFF;
+    width: 900px;
+    height:1940px;
+    margin: 0 auto;
+    text-align:center;
+    margin-top: 5px;
+    border-bottom: 0px; 	
+    /*background-color:#0000CC;	*/
+}
+
+#medio{
+    width: 900px;
+    padding-top:5px;
+    background-color:#FFFFFF;
+}
+
+#caja-medio-izq{
+    width:59%;
+    height:550px;    
+    float:left;
+
+    background-color: whitesmoke;
+    background-image: url(fondos/fx_2.jpg);
+
+
+    -moz-box-shadow:0 0 3px #AAAAAA;
+    -webkit-box-shadow:0 0 3px #AAAAAA;
+    box-shadow:0 0 3px #AAAAAA;
+
+    /* CSS3 Rounded Corners */
+
+    -moz-border-radius-bottomleft:4px;
+    -webkit-border-bottom-left-radius:4px;
+    border-bottom-left-radius:4px;
+
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+
+    border:1px solid white;
+}
+
+#caja-medio-derecha{
+    float:right;
+    /*width:390px;*/
+    /*width:384px;*/
+    width:40%;
+
+    height:550px;
+    /*border:0px solid #333333;*/
+    background-color: whitesmoke;
+    background-image: url(fondos/fx_2.jpg);
+
+    -moz-box-shadow:0 0 3px #AAAAAA;
+    -webkit-box-shadow:0 0 3px #AAAAAA;
+    box-shadow:0 0 3px #AAAAAA;
+
+    /* CSS3 Rounded Corners */
+
+    -moz-border-radius-bottomleft:4px;
+    -webkit-border-bottom-left-radius:4px;
+    border-bottom-left-radius:4px;
+
+    -moz-border-radius-bottomright:4px;
+    -webkit-border-bottom-right-radius:4px;
+    border-bottom-right-radius:4px;
+
+    border:1px solid white;
+}
+
+#caja-medio-izq-horarios{
+    width:50%;
+    height:350px;    
+    float:left;
+}
+
+#caja-medio-derecha-horarios{
+    float:right;
+    width:49%;
+    height:350px;
+}
+
+
+#caja-medio-der-mapa{
+    height:384px;    
+}
+
+#slider{
+    height: 280px;
+    width: 960px;		
+    border:0px solid #333333;
+    border-radius: 0px;
+    margin:0 auto 0 auto;
+    text-align:left;
+}
+
+#pie{
+    width:960px;
+    height:250px;
+    /*background-color:#0B6121;*/
+    background-color:white;
+
+    /*#088A68;*/
+    /*#CCCCCC;    */
+    margin:0 auto;
+    border:1px solid #333333;
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    padding-left:30px;
+    padding-right:30px;    
+    margin-top:5px;
+    margin-bottom:0px;
+}
+
+/* LETERAS*/
+h4{
+    text-align: left; 
+    margin:15px;
+    color: #0B6121; 
+    font-family: Calibri, Geneva, sans-serif; 
+    /*font-family: helvetica,arial,sans-serif;*/
+    font-size: 20px;
+}
+
+p{
+    text-align: left; 
+    margin:15px; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-size: 9pt; 
+    font-weight: normal; 
+    font-style: normal;
+    color: black;
+    text-align: justify;
+}

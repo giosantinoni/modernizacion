@@ -1,7 +1,7 @@
 <?php
  session_start();
 if (isset($_SESSION["s_usuario"])) {
-    header("Location: vistas/inicio.php");
+    header("Location: vistas/consultar.php");
 }
 @$mje = base64_decode($_GET['mje']);
 ?>

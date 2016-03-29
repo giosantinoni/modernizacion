@@ -31,7 +31,7 @@ if(isset($_POST['nombre'])){
     <head>
     	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Administrador</title>
+        <title>Sistema de consulta de cargos docentes provinciales</title>
 
 
         <!--<link href="css/bootstrap.min.css" rel="stylesheet" />          
@@ -98,7 +98,18 @@ if(isset($_POST['nombre'])){
                                                 </td>
                                                 <td width="4%"></td>
                                             </tr>                                                                                     
-                                                                     
+                                            <tr>
+                                                
+                                                <td style="width:25%">
+                                                <div style="margin-top:20px">
+                                                Mostrar puntaje total</div>
+                                                    
+                                                </td>
+                                                <td><div style="margin-top:20px">
+                                                     <input type="checkbox" name="total" value="si" checked ></div>
+                                                </td>
+                                                <td width="4%"></td>
+                                            </tr>           
                                             <tr><td>&nbsp;</td><td></td><td></td></tr>
                                             <tr>
                                                 <td>
@@ -121,20 +132,26 @@ if(isset($_POST['nombre'])){
 
                 <div style="width:80%; font-family:'Roboto', sans-serif; font-weight:300">
                     <?php
-                    $registros = consultar($dni, $nombre, $apellido);
+                    if $POST['total']=="si"{
+                        $registros = consultar_total($dni, $nombre, $apellido);
+                    }
+                    else{
+                        $registros = consultar($dni, $nombre, $apellido);
+                    }
                     echo '<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">';
-                    echo '<thead><tr><th>Nombre</th><th>Apellido</th><th>DNI</th><th>Organismo</th><th>Cargo</th><th>Puntaje</th><th>Fecha de Alta</th><th>Situacion de Revista</th></tr></thead>';
+                    echo '<thead><tr><th>Nombre</th><th>Apellido</th><th>Cuil</th><th>Organismo</th><th>Cargo</th><th>Puntaje</th><th>Puntaje Total</th><th>Fecha de Alta</th><th>Situacion de Revista</th></tr></thead>';
 					//echo '<tfoot><tr><th>Nombre</th><th>Apellido</th><th>DNI</th><th>ORGANISMO</th><th>CARGO</th><th>PUNTAJE</th><th>FECHA ALTA</th><th>SITUACION REVISTA</th></tr></tfoot>';
 					echo "<tbody>";
                     foreach ($registros as $reg) {                                                                                        
                         $nombre = $reg['NOMBRE'];
                         $apellido = $reg['APELLIDO'];
-                        $cuil = $reg['PRE_CUIL'].'-'.$reg['DNI'].''.$reg['SUF_CUIL'];
+                        $cuil = $reg['PRE_CUIL'].'-'.$reg['DNI'].'-'.$reg['SUF_CUIL'];
 						$organismo = $reg['ORGANISMO'];
 						$cargo = $reg['CARGO'];
 						$puntaje = $reg['PUNTAJE'];
 						$revista = $reg['REVISTA'];
 						$fecha_alta = $reg['ALTA'];
+                        $total = $reg['total'];
                         echo '<tr>';
                         echo '<td>';
                         echo $nombre;
@@ -153,6 +170,9 @@ if(isset($_POST['nombre'])){
                         echo '</td>';
 						echo '<td>';
                         echo $puntaje;
+                        echo '</td>';
+                        echo '<td>';
+                        echo $total;
                         echo '</td>';
 						echo '<td>';
                         echo $fecha_alta;

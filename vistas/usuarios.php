@@ -24,7 +24,7 @@ if ($idUsuarioMod != "") {
     <head>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Administrador</title>
+        <title>Sistema de consulta de cargos docentes provinciales</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet" />          
         <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
